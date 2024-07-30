@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  chatbot:
+    build: .
+    ports:
+      - "7860:7860" # First port number is the host machine and it can be changed as you wish. Change it in this file AND in the app.py file
+    volumes:
+      - .:/app
